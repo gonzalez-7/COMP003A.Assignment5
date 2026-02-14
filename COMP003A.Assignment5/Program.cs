@@ -10,7 +10,19 @@
             // repeats as long as the user chooses y
             while (runAgain == "y")
             {
-                
+                DisplayIntroduction();
+
+                Console.Write("Enter your name: ");
+                string userName = Console.ReadLine();
+
+                Console.Write("Enter a whole number: ");
+                int userNumber = int.Parse(Console.ReadLine());
+
+                DisplayUserInfo(userName, userNumber);
+
+                int result = CalculateResult(userNumber);
+
+                Console.WriteLine($"\nCalculated result: {result}");
             }
         }
     }
