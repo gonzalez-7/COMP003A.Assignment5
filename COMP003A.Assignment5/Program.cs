@@ -45,15 +45,25 @@
             Console.WriteLine("Program anded");
         }
 
+        // it keeps the introduction organized
         static void DisplayIntroduction()
         {
             Console.WriteLine("Welcome to the Program!\n");
         }
 
+        // demostrates passing data using parameters
         static void DisplayUserInfo(string name, int number)
         {
             Console.WriteLine($"Hello, {name}!");
             Console.WriteLine($"You entered: {number}");
+        }
+
+        // it performs a calculation and raturn a value to Main
+
+        static int CalculateResult(int number)
+        {
+            int calculateValue = number * 2;
+            return calculateValue;
         }
     }
 }
