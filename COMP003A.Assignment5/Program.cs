@@ -49,5 +49,11 @@
         {
             Console.WriteLine("Welcome to the Program!\n");
         }
+
+        static void DisplayUserInfo(string name, int number)
+        {
+            Console.WriteLine($"Hello, {name}!");
+            Console.WriteLine($"You entered: {number}");
+        }
     }
 }
