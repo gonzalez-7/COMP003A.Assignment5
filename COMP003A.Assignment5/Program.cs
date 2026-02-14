@@ -18,12 +18,31 @@
                 Console.Write("Enter a whole number: ");
                 int userNumber = int.Parse(Console.ReadLine());
 
+                // uses parameters instead of accessing Main variable directly
                 DisplayUserInfo(userName, userNumber);
 
+                // it returns a value
                 int result = CalculateResult(userNumber);
 
                 Console.WriteLine($"\nCalculated result: {result}");
+
+                // Decision of the results
+                if (result > 10)
+                {
+                    Console.WriteLine("The result is greater than 10");
+                }
+                else
+                {
+                    Console.WriteLine("The result is 10 or less");
+                }
+
+                Console.Write("\nWould you like to run the program again (y/n): ");
+                runAgain = Console.ReadLine();
+
+                Console.WriteLine();
             }
+
+            Console.WriteLine("Program anded");
         }
     }
 }
