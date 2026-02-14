@@ -44,5 +44,10 @@
 
             Console.WriteLine("Program anded");
         }
+
+        static void DisplayIntroduction()
+        {
+            Console.WriteLine("Welcome to the Program!\n");
+        }
     }
 }
